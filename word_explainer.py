@@ -50,7 +50,7 @@ class PaperExplainerAgent:
         genai.configure(api_key=api_key)
 
         print("🤖 正在连接到Gemini API...")
-        self.model = genai.GenerativeModel('gemini-pro')
+        self.model = genai.GenerativeModel('models/gemini-pro-latest')
         self.field_of_study = field_of_study
         self.history = []
 
